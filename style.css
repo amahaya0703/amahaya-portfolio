@@ -1,0 +1,110 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+<<<<<<< Updated upstream
+
+.contena {
+  min-height: 100vh;
+  width: 900px;
+  margin: 0 auto;
+  display: grid;
+  font-weight: 800;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template:
+    "nav nav nav nav" 150px
+    "side main main main" 1fr
+    "side content1 content2 content3" 1fr
+    "side footer footer footer" 100px;
+  text-align: center;
+  text-transform: uppercase;
+=======
+.contena {
+  display: grid;
+  min-height: 100vh;
+  margin: 0 auto;
+  grid-template:
+    "nav nav nav nav" 150px
+    "side main main main"
+    "side content1 content2 content3"
+    "side footer footer footer";
+>>>>>>> Stashed changes
+  grid-gap: 0.2rem;
+}
+
+nav {
+  grid-area: nav;
+<<<<<<< Updated upstream
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+=======
+>>>>>>> Stashed changes
+}
+
+main {
+  grid-area: main;
+<<<<<<< Updated upstream
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+=======
+>>>>>>> Stashed changes
+}
+
+aside {
+  grid-area: side;
+<<<<<<< Updated upstream
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.content-left {
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content-center {
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content-right {
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+=======
+}
+.content-left {
+  grid-area: content1;
+}
+
+.content-center {
+  grid-area: content2;
+}
+
+.content-right {
+  grid-area: content3;
+>>>>>>> Stashed changes
+}
+
+footer {
+  grid-area: footer;
+<<<<<<< Updated upstream
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width: 840px) {
+  .contena {
+    grid-template:
+      "nav"
+      "side"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+=======
+>>>>>>> Stashed changes
+}
