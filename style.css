@@ -1,0 +1,75 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+.contena {
+  min-height: 100vh;
+  width: 900px;
+  margin: 0 auto;
+  display: grid;
+  font-weight: 800;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template:
+    "nav nav nav nav" 150px
+    "side main main main" 1fr
+    "side content1 content2 content3" 1fr
+    "side footer footer footer" 100px;
+  text-align: center;
+  text-transform: uppercase;
+  grid-gap: 0.2rem;
+}
+
+nav {
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+main {
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+aside {
+  grid-area: side;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.content-left {
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content-center {
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content-right {
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+footer {
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width: 840px) {
+  .contena {
+    grid-template:
+      "nav"
+      "side"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
